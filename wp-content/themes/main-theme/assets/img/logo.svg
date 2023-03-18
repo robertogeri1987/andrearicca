@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="19px" viewBox="0 0 91 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>star_black_24dp</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing" transform="translate(-31.000000, -631.000000)">
+            <g id="Group-4" transform="translate(29.000000, 579.000000)">
+                <g id="star_black_24dp" transform="translate(0.000000, 50.000000)">
+                    <g id="Group">
+                        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                        <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                    </g>
+                    <polygon id="Shape" fill="#EFBD04" fill-rule="nonzero" points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21"></polygon>
+                    <polygon id="Shape-Copy" fill="#EFBD04" fill-rule="nonzero" points="36 17.27 42.18 21 40.54 13.97 46 9.24 38.81 8.63 36 2 33.19 8.63 26 9.24 31.46 13.97 29.82 21"></polygon>
+                    <polygon id="Shape-Copy-2" fill="#EFBD04" fill-rule="nonzero" points="60 17.27 66.18 21 64.54 13.97 70 9.24 62.81 8.63 60 2 57.19 8.63 50 9.24 55.46 13.97 53.82 21"></polygon>
+                    <polygon id="Shape-Copy-3" fill="#EFBD04" fill-rule="nonzero" points="83 17.27 89.18 21 87.54 13.97 93 9.24 85.81 8.63 83 2 80.19 8.63 73 9.24 78.46 13.97 76.82 21"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+// INIZIO CODICE DA NON TOCCARE
+// serve per essere sostituito con le info del tema tramite webpack
+.NON_EDITARE {
+  size: 0px;
+}
+
+// FINE CODICE DA NON TOCCARE
+
+/* ! Reset Css */
+@import "./stiliSpecifici/reset.scss";
+
+// // si importa splide-sea-green.min.css non quello di default
+// // in quanto ha già le frecce ai lati e non sopra le immagini
+// @import '../node_modules/@splidejs/splide/dist/css/themes/splide-sea-green.min.css';
+@import "./stiliSpecifici/base/base.scss";
+@import "./stiliSpecifici/colors.scss";
+
+@import "./stiliSpecifici/base/typography.scss";
+
+@import "./stiliSpecifici/menu.scss";
+
+@import "./stiliSpecifici/helper.scss";
+@import "./stiliSpecifici/layout/header.scss";
+
+@import "./stiliSpecifici/components/button.scss";
+
+@import "./stiliSpecifici/pages/homepage.scss";
+
+// @media (min-width: 1200px) {
+
+//     .introduzione_home .container-fluid,
+//     .navbar .container-fluid,
+//     .top_header .conteiner-fluid {
+//         width: 1400px;
+//     }
+// }
+html {
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: none;
+}
+
+.informazioni_mobile {
+  display: none;
+}
+
+/* ! Cover */
+.cover {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative !important;
+  overflow: hidden;
+}
+.admin-bar .cover {
+  height: calc(100vh - 32px);
+}
+
+.cover-content {
+  position: relative;
+  z-index: 3;
+}
+
+.cover h1 {
+  text-transform: uppercase;
+}
+
+// .cover::before {
+//   content: " ";
+//   position: absolute;
+//   bottom: 0;
+//   display: block;
+//   width: 100vw;
+//   height: 40vh;
+// }
+
+/* Tabella Orari*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  font-weight: 900;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 15px;
+}
+
+td {
+  min-width: 170px;
+}
+
+tr {
+  padding: 5px 0;
+  border-bottom: solid 1px #eeb11b;
+  color: #fff;
+}
+
+td p {
+  margin: 0px !important;
+}
+
+
+/* Contact Form */
+
+#responsive-form {
+  max-width: 600px;
+  /*-- change this to get your desired form width --*/
+  margin: 0 auto;
+  margin-top: 35px;
+  width: 100%;
+}
+
+#responsive-form input,
+#responsive-form textarea {
+  max-width: 100%;
+  border-radius: 15px;
+  padding: 15px 10px;
+  border: none;
+  width: 100% !important;
+}
+
+[type="submit"] {
+  max-width: 120px !important;
+}
+
+#responsive-form input[type="checkbox"] {
+  display: inline-block;
+  max-width: 15px;
+}
+
+#responsive-form textarea {
+  width: 100%;
+}
+
+[type="submit"]:hover {
+  background-color: $yellow;
+}
+
+#responsive-form input::placeholder,
+#responsive-form textarea::placeholder {
+  font-size: 12px;
+  color: $black;
+}
+
+.bnt_invia--form {
+  position: relative;
+}
+
+.bnt_invia--form input {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $yellow-dark;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  width: 120px;
+}
+
+.form-row {
+  width: 100%;
+}
+
+.column-half,
+.column-full {
+  float: left;
+  position: relative;
+  padding: 0.65rem;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Checkbox*/
+.wpcf7-acceptance {
+  input[type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    margin-right: 15px;
+    width: 20px;
+  }
+
+  input[type="checkbox"]:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    margin-top: -5px;
+    margin-left: -1px;
+    width: 20px;
+    height: 20px;
+    background: #fcfcfc;
+    border-radius: 2px;
+  }
+
+  input[type="checkbox"]:checked:before {
+    background: $yellow-dark;
+    border-color: #000;
+  }
+
+  input[type="checkbox"]:disabled {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  input[type="checkbox"]:disabled:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  input[type="checkbox"]:checked:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+      4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+
+  span.wpcf7-list-item {
+    margin: 20px 0 0 0;
+  }
+
+  .wpcf7-list-item-label {
+    color: $white;
+    font-size: 14px;
+  }
+}
+
+/**---------------- Media query ----------------**/
+// @media (min-width: 1400px) {
+
+//     .container,
+//     .container-sm,
+//     .container-md,
+//     .container-lg,
+//     .container-xl,
+//     .container-xxl {
+//         max-width: 1320px;
+//     }
+// }
+
+@media only screen and (min-width: 48em) {
+  .column-half {
+    width: 50%;
+  }
+}
+
+/* ! Css Tablet */
+
+@import "./stiliSpecifici/tablet.scss";
+
+/* ! Css Mobile */
+
+@import "./stiliSpecifici/mobile.scss";
+
+*,
+* :before,
+* :after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
