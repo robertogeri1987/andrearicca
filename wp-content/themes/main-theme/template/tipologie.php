@@ -2,7 +2,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 mb-5">
-                <h2>Riparazione elettrodomestici di tutte le tipologie:</h2>
+                <span class="color-primary text-uppercase text-thin font-bold mb-4 d-block">
+                    Cosa Facciamo
+                </span>
+                <h2 class="mb-5">Riparazione elettrodomestici di tutte le tipologie:</h2>
                 <p>
                     Il nostro <strong>servizio di assistenza elettrodomestici</strong> è la soluzione ideale per risolvere rapidamente e con professionalità qualsiasi guasto o malfunzionamento del tuo grande elettrodomestico, come lavatrici, asciugatrici, lavastoviglie, frigoriferi, piani cottura e forni elettrici.
                 </p>
@@ -29,7 +32,7 @@
                                 <?php
                                 if (has_post_thumbnail()) {
                                     $image_attributes = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-                                    echo '<img src="' . $image_attributes[0] . '" alt="' . get_the_title() . '" width="auto" height="160" />';
+                                    echo '<img src="' . $image_attributes[0] . '" alt="' . get_the_title() . '" width="160px" height="160" style="object-fit:contain;"/>';
                                 }
                                 ?>
                             </div>

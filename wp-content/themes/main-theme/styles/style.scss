@@ -57,6 +57,15 @@ html {
   position: relative !important;
   overflow: hidden;
 }
+.bubble{
+  background-color: #b8b8b8;
+  width: 70vw;
+  height: 70vw;
+  border-radius: 100%;
+  background-color: var(--color-primary);
+  opacity: .4;
+}
+
 .admin-bar .cover {
   height: calc(100vh - 32px);
 }

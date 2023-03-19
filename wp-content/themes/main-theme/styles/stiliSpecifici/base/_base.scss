@@ -58,6 +58,12 @@ body {
 .color-tertiary {
   color: var(--color-tertiary);
 }
+.bg-primary {
+  background-color: var(--color-primary)!important;
+}
+.bg-dark {
+  background-color: var(--color-grey-dark-1)!important;
+}
 .color-dark{
   color: var(--color-grey-dark-1);
 }
@@ -89,7 +95,9 @@ body {
 .box-shadow {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
 }
-
+.shadow-grey {
+box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+}
 .container-xxl {
   max-width: 1320px;
 }

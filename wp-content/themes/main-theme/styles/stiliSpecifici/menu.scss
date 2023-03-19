@@ -7,438 +7,428 @@
 */
 
 .hamburger {
-    padding: 15px 15px;
-    display: inline-block;
-    cursor: pointer;
-    transition-property: opacity, filter;
-    transition-duration: 0.15s;
-    transition-timing-function: linear;
-    font: inherit;
-    color: inherit;
-    text-transform: none;
-    background-color: transparent;
-    border: 0;
-    margin: 0;
-    overflow: visible;
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
 }
 
 .hamburger:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .hamburger.is-active:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-    background-color: $black;
+  background-color: $black;
 }
 
 .hamburger-box {
-    width: 30px;
-    height: 24px;
-    display: inline-block;
-    position: relative;
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
 }
 
 .hamburger-inner {
-    display: block;
-    top: 50%;
-    margin-top: -2px;
+  display: block;
+  top: 50%;
+  margin-top: -2px;
 }
 
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-    width: 30px;
-    height: 4px;
-    background-color: $gray;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease;
+  width: 30px;
+  height: 4px;
+  background-color: $gray;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
 }
 
 .hamburger-inner::before,
 .hamburger-inner::after {
-    content: "";
-    display: block;
+  content: "";
+  display: block;
 }
 
 .hamburger-inner::before {
-    top: -10px;
+  top: -10px;
 }
 
 .hamburger-inner::after {
-    bottom: -10px;
+  bottom: -10px;
 }
 
 /*elastic*/
 .hamburger--elastic .hamburger-inner {
-    top: 2px;
-    transition-duration: 0.275s;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .hamburger--elastic .hamburger-inner::before {
-    top: 10px;
-    transition: opacity 0.125s 0.275s ease;
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
 }
 
 .hamburger--elastic .hamburger-inner::after {
-    top: 20px;
-    transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .hamburger--elastic.is-active .hamburger-inner {
-    transform: translate3d(0, 10px, 0) rotate(135deg);
-    transition-delay: 0.075s;
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s;
 }
 
 .hamburger--elastic.is-active .hamburger-inner::before {
-    transition-delay: 0s;
-    opacity: 0;
+  transition-delay: 0s;
+  opacity: 0;
 }
 
 .hamburger--elastic.is-active .hamburger-inner::after {
-    transform: translate3d(0, -20px, 0) rotate(-270deg);
-    transition-delay: 0.075s;
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transition-delay: 0.075s;
 }
-
 
 .dropdown-submenu {
-    position: relative;
+  position: relative;
 }
 
-.dropdown-submenu>a:after {
-    content: "\f0da";
-    float: right;
-    border: none;
-    font-family: 'FontAwesome';
+.dropdown-submenu > a:after {
+  content: "\f0da";
+  float: right;
+  border: none;
+  font-family: "FontAwesome";
 }
 
-.dropdown-submenu>.dropdown-menu {
-    top: 0;
-    left: 100%;
-    margin-top: 0px;
-    margin-left: 0px;
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 header {
-    width: 100%;
-    position: fixed;
-    background: #fff;
-    z-index: 100;
-    transition: 1s;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  z-index: 100;
+  transition: 1s;
 }
 
 .top_header {
-    background: var(--color-primary);
-    transition: all 1s;
-    color: $white;
-    height: 40px;
+  background: var(--color-primary);
+  transition: all 1s;
+  color: $white;
+  height: 40px;
 }
 
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-    background-color: $green;
+  background-color: $green;
 }
 
 .header.active_background {
-    background: $white;
-    -webkit-box-shadow: 0 2px 12px -3px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 12px -3px rgba(0, 0, 0, 0.1);
+  background: $white;
+  -webkit-box-shadow: 0 2px 12px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px -3px rgba(0, 0, 0, 0.1);
 }
 
 .header.active_background .nav-link {
-    color: $yellow-dark !important;
+  color: $yellow-dark !important;
 }
 
 .header.active_background .hamburger-inner,
 .header.active_background .hamburger-inner::before,
 .header.active_background .hamburger-inner::after {
-    background-color: $gray;
+  background-color: $gray;
 }
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-    background-color: $yellow;
+  background-color: $yellow;
 }
 
 .cd-header-buttons {
-    padding: 0;
-    margin: 0px;
-    color: $white;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
+  padding: 0;
+  margin: 0px;
+  color: $white;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 
-.cd-header-buttons>li {
-    display: flex;
-    align-items: center;
+.cd-header-buttons > li {
+  display: flex;
+  align-items: center;
 }
 
 .cd-header-buttons a,
 .cd-header-buttons li {
-    color: $white;
-    margin: 0px 5px;
-    font-size: 13px;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  color: $white;
+  margin: 0px 5px;
+  font-size: 13px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .cd-header-buttons i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .cd-header-buttons i::before {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .cd-header-buttons .fa-2x::before {
-    font-size: 26px;
+  font-size: 26px;
 }
-
 
 .stile-menu2,
 .lev-2,
 .lev-3 {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
-    height: 4px;
+  height: 4px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: $yellow-dark;
-    font-weight: 900;
+  color: #1a1a1a;
 }
 
 .nav-link,
 a.dropdown-item,
 .dropdown-item {
-    color: $white;
+  color: $white;
 }
 
 .dropdown-item {
-    text-decoration: none;
-    position: relative;
+  text-decoration: none;
+  position: relative;
 }
 
 .dropdown-item:after {
-    content: "";
-    width: 80%;
-    position: absolute;
-    left: 24px;
-    bottom: 1px;
-    border-width: 0 0 1px;
-    border-style: solid;
-}
-
-#cd-primary-nav>li:last-child a {
-    color: $white !important;
+  content: "";
+  width: 80%;
+  position: absolute;
+  left: 24px;
+  bottom: 1px;
+  border-width: 0 0 1px;
+  border-style: solid;
 }
 
 .dropdown-toggle::after {
-    color: $green;
+  color: $green;
 }
 
-.dropdown-submenu>.dropdown-menu {
-    top: -9px;
+.dropdown-submenu > .dropdown-menu {
+  top: -9px;
+}
+#cd-primary-nav > li {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+#cd-primary-nav > li:last-child {
+  background-color: #00bb2d !important;
+  a {
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
 
-#cd-primary-nav>li:last-child {
-    background-color: $green;
-    border-radius: 15px;
-    margin-left: 4vw;
-    padding: 0 10px;
+#cd-primary-nav > li:last-child:hover {
+  background-color: var(--color-secodary);
 }
-
-#cd-primary-nav>li:last-child:hover {
-    background-color: $green-light;
-}
-
-#cd-primary-nav>li:last-child a:hover {
-    color: $white !important;
-}
-
-// #cd-primary-nav li:last-child a {
-//     color: $white;
-// }
 
 .dropdown-item.active,
 .dropdown-item:active {
-    color: $white !important;
-    background-color: $yellow-light !important;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover,
 .dropdown-item:hover,
 .dropdown-item:focus {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .navbar-light .navbar-toggler {
-    border: 0px;
+  border: 0px;
 }
 
 .content-top-header {
-    max-width: 1024px;
-    margin: 0 auto;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
 .nav-link,
 .dropdown-item {
-    font-weight: 900 !important;
+  font-weight: 900 !important;
 }
-
 .nav-link:hover {
-    color: $green !important;
+  color: var(--color-primary) !important;
 }
 
 .dropdown-menu,
 .dropdown-item:focus,
 .dropdown-item:hover {
-    background-color: $green;
-    color: $yellow;
+  background-color: $green;
+  color: $yellow;
 }
 
-.navbar-light .navbar-nav .show>.nav-link {
-    color: $green-light;
+.navbar-light .navbar-nav .show > .nav-link {
+  color: $green-light;
 }
 
 .nav-link,
 a.dropdown-item {
-    text-transform: uppercase !important;
-    font-size: 15px;
-    font-weight: 100;
+  font-size: 1.6rem;
 }
-
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.4rem;
+    padding-left: 1.4rem;
+  }
+}
 ul.dropdown-menu {
-    border-radius: 0px !important;
+  border-radius: 0px !important;
 }
 
-.dropdown-submenu>a:after {
-    display: inline-block !important;
-    width: 0 !important;
-    height: 0 !important;
-    content: "" !important;
+.dropdown-submenu > a:after {
+  display: inline-block !important;
+  width: 0 !important;
+  height: 0 !important;
+  content: "" !important;
 }
 
 /* large styles */
 @media screen and (min-width: 1025px) {
+  .menu-mio > label,
+  input[type="checkbox"] {
+    display: none;
+  }
 
-    .menu-mio>label,
-    input[type="checkbox"] {
-        display: none;
-    }
+  .menu-mio > ul {
+    height: 41px;
+  }
 
-    .menu-mio>ul {
-        height: 41px;
-    }
+  .menu-mio a {
+    padding: 10px;
+  }
 
-    .menu-mio a {
-        padding: 10px;
-    }
+  .menu-mio > ul > li {
+    display: inline-block;
+  }
 
-    .menu-mio>ul>li {
-        display: inline-block;
-    }
+  .menu-hasdropdown {
+    position: relative;
+  }
 
-    .menu-hasdropdown {
-        position: relative;
-    }
+  .menu-hasdropdown:hover > ul {
+    display: block;
+    -webkit-animation: grow 0.5s ease-in-out;
+    animation: grow 0.5s ease-in-out;
+  }
 
-    .menu-hasdropdown:hover>ul {
-        display: block;
-        -webkit-animation: grow .5s ease-in-out;
-        animation: grow .5s ease-in-out;
-    }
+  .menu-hasdropdown > ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    color: #394a89;
+    border-top: 4px solid #394a89;
+  }
 
-    .menu-hasdropdown>ul {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: #fff;
-        color: #394a89;
-        border-top: 4px solid #394a89;
-    }
+  .menu-hasflyout > ul {
+    left: 100%;
+    top: 0;
+  }
 
-    .menu-hasflyout>ul {
-        left: 100%;
-        top: 0;
-    }
-
-    .menu-hasflyout .menu-downicon {
-        display: none;
-    }
+  .menu-hasflyout .menu-downicon {
+    display: none;
+  }
 }
 
 /* look and feel only, not needed for core menu*/
 @-webkit-keyframes grow {
-    0% {
-        display: none;
-        opacity: 0;
-    }
+  0% {
+    display: none;
+    opacity: 0;
+  }
 
-    50% {
-        display: block;
-        opacity: 0.5;
-    }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes grow {
-    0% {
-        display: none;
-        opacity: 0;
-    }
+  0% {
+    display: none;
+    opacity: 0;
+  }
 
-    50% {
-        display: block;
-        opacity: 0.5;
-    }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
 
-    100% {
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
 .menu-dropdown a {
-    padding: 15px 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-expand-lg .hamburger {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 991px) {
-    .navbar-expand-lg .hamburger {
-        display: block;
-    }
+  .navbar-expand-lg .hamburger {
+    display: block;
+  }
 }
 
-
 /* narrow  */
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+}
 
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+}
 
-@media screen and (min-width: 1025px) {}
+@media screen and (min-width: 1025px) {
+}
 
 /*Fine Menu*/

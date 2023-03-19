@@ -4,10 +4,10 @@
 *
 */
 
-$h1: 5.8rem;
-$h2: 4.8rem;
-$h3: 3.5rem;
-$h4: 2rem;
+$h1: 5rem;
+$h2: 3.6rem;
+$h3: 2.8rem;
+$h4: 1.9rem;
 
 strong,
 b {
@@ -58,7 +58,11 @@ h4,
 .font-bold {
   font-weight: 900;
 }
-.text-thin{
-  font-size: 1.4rem!important;
-  line-height: 2rem!important;
+.text-thin {
+  font-size: 1.4rem !important;
+  line-height: 2rem !important;
+}
+.text-stroke {
+  color: white;
+  text-shadow: -1px 0 #3c4043, 0 1px #3c4043, 1px 0 #3c4043, 0 -1px #3c4043;
 }
