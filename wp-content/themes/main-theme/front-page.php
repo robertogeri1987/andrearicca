@@ -51,7 +51,8 @@
 			</div>
 			<div class="row d-flex align-items-stretch">
 				<div class="col-md-3 p-4">
-					<div class="shadow-grey py-6 px-5 h-100">
+					<div class="shadow-grey py-6 px-5 h-100 position-relative">
+						<img class="mb-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/pezzi-originali.svg" alt="pezzi originali per qualsisi elettrodomestico" width="100" loading="lazy">
 						<h3 class="color-primary">Pezzi<br> originali</h3>
 						<p class="font-bold text-uppercase text-4">
 							La qualità dei ricambi è essenziale per garantirti prestazioni sempre al top
@@ -62,6 +63,7 @@
 				</div>
 				<div class="col-md-3 p-4">
 					<div class="shadow-grey py-6 px-5 h-100">
+						<img class="mb-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/interventi-rapidi.svg" alt="interventi rapidi ed efficaci" width="100" loading="lazy">
 						<h3 class="color-primary">Interventi<br> Rapidi</h3>
 						<p class="font-bold text-uppercase text-4">
 							I nostri interventi sono rapidi ed efficaci dal momento della chiamata al tecnico.
@@ -73,6 +75,7 @@
 				</div>
 				<div class="col-md-3 p-4">
 					<div class="shadow-grey py-6 px-5 h-100">
+						<img class="mb-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/tecnici-specializzati.svg" alt="tecnici specializzati" width="100" loading="lazy">
 						<h3 class="color-primary">Tecnici<br> Specializzati</h3>
 						<p class="font-bold text-uppercase text-4"> I nostri interventi sono garantiti dalla competenza dei nostri tecnici </p>
 						<p>
@@ -82,6 +85,7 @@
 				</div>
 				<div class="col-md-3 p-4">
 					<div class="shadow-grey py-6 px-5 h-100">
+						<img class="mb-4" src="<?php echo get_template_directory_uri(); ?>/assets/img/preventivi-trasparenti.svg" alt="preventivi trasparenti" width="100" loading="lazy">
 						<h3 class="color-primary">Preventivi<br> Trasparenti</h3>
 						<p class="font-bold text-uppercase text-4">La qualità dei ricambi è essenziale per garantirti prestazioni sempre al top</p>
 						<p>Per questo utilizziamo solo i migliori: originali o compatibili.
