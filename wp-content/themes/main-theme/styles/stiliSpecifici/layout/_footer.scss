@@ -1,0 +1,14 @@
+footer {
+  a {
+    font-size: 1.5rem;
+    display: block;
+    padding: 0.8rem 0;
+    color: #1e1e1e;
+    &:hover{
+        color: var(--color-primary);
+    }
+  }
+  p{
+    margin-bottom: 0;
+  }
+}

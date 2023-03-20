@@ -23,6 +23,7 @@
 
 @import "./stiliSpecifici/helper.scss";
 @import "./stiliSpecifici/layout/header.scss";
+@import "./stiliSpecifici/layout/footer.scss";
 
 @import "./stiliSpecifici/components/button.scss";
 
@@ -251,8 +252,7 @@ td p {
   }
 
   .wpcf7-list-item-label {
-    color: $white;
-    font-size: 14px;
+    font-size: 1.2rem;
   }
 }
 

@@ -74,9 +74,9 @@ if (!function_exists('iw_sidebars')) {
         'name' => esc_html__('Footer 1', 'iw'),
         'id' => 'footer1',
         'description' => esc_html__('Widget sidebar 1', 'iw'),
-        'before_title' => '<h3>',
+        'before_title' => '<h3 class="text-4">',
         'after_title' => '</h3>',
-        'before_widget' => '<div class="widget mt-4 %2$s clearfix">',
+        'before_widget' => '<div class="widget %2$s clearfix">',
         'after_widget' => '</div>',
 
       )
@@ -86,7 +86,7 @@ if (!function_exists('iw_sidebars')) {
         'name' => esc_html__('Footer 2', 'iw'),
         'id' => 'footer2',
         'description' => esc_html__('Widget sidebar 2', 'iw'),
-        'before_title' => '<h3 id="pagine_title">',
+        'before_title' => '<h3 class="text-4">',
         'after_title' => '</h3>',
         'before_widget' => '<div class="widget footer_title_margin footer_border %2$s clearfix">',
         'after_widget' => '</div>',
@@ -98,7 +98,7 @@ if (!function_exists('iw_sidebars')) {
         'name' => esc_html__('Footer 3', 'iw'),
         'id' => 'footer3',
         'description' => esc_html__('Widget sidebar 3', 'iw'),
-        'before_title' => '<h3 id="viso_title">',
+        'before_title' => '<h3 class="text-4">',
         'after_title' => '</h3>',
         'before_widget' => '<div class="widget footer_title_margin footer_border %2$s clearfix">',
         'after_widget' => '</div>',
@@ -110,7 +110,7 @@ if (!function_exists('iw_sidebars')) {
         'name' => esc_html__('Footer 4', 'iw'),
         'id' => 'footer4',
         'description' => esc_html__('Widget sidebar 4', 'iw'),
-        'before_title' => '<h3 id="viso_corpo">',
+        'before_title' => '<h3 class="text-4">',
         'after_title' => '</h3>',
         'before_widget' => '<div class="widget footer_title_margin footer_border %2$s clearfix">',
         'after_widget' => '</div>',
@@ -143,7 +143,6 @@ if (!function_exists('iw_styles')) {
   function iw_styles()
   {
     wp_enqueue_style('iw-bootstrap-css', get_template_directory_uri() . '/styles/css/bootstrap.min.css');
-    wp_enqueue_style('iw-load-font-works', 'https://fonts.googleapis.com/css?family=Work+Sans:300,400&display=swap');
     wp_enqueue_style('iw-style-default-css', get_template_directory_uri() . '/style.css?v=' . time());
   }
 }

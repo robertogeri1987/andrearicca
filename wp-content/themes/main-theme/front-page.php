@@ -99,5 +99,6 @@
 	<?php get_template_part('template/calltoaction', 'page'); ?>
 	<?php get_template_part('template/marchi', 'page'); ?>
 	<?php get_template_part('template/recensioni', 'page'); ?>
+	<?php get_template_part('template/contactform', 'page'); ?>
 </main>
 <?php get_footer(); ?>
