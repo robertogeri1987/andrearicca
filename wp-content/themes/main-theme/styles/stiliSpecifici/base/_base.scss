@@ -1,6 +1,6 @@
 :root {
   // --color-primary: #ffc200;
-   --color-primary: #fea132;
+  --color-primary: #fea132;
   --color-secodary: #006e5f;
   --color-tertiary: #ba265d;
   --color-yellow: #fac500;
@@ -60,12 +60,12 @@ body {
   color: var(--color-tertiary);
 }
 .bg-primary {
-  background-color: var(--color-primary)!important;
+  background-color: var(--color-primary) !important;
 }
 .bg-dark {
-  background-color: var(--color-grey-dark-1)!important;
+  background-color: var(--color-grey-dark-1) !important;
 }
-.color-dark{
+.color-dark {
   color: var(--color-grey-dark-1);
 }
 .bg-grey-light {
@@ -90,6 +90,9 @@ body {
 .py-10 {
   padding: 10rem 0;
 }
+.pt-12 {
+  padding-top: 12rem;
+}
 .py-12 {
   padding: 12rem 0;
 }
@@ -97,7 +100,7 @@ body {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.1);
 }
 .shadow-grey {
-box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
 }
 .container-xxl {
   max-width: 1320px;
@@ -122,3 +125,47 @@ box-shadow: 0 3px 10px 0 rgba(0,0,0,.1);
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcb25b",endColorstr="#ff8b00",GradientType=1);
 }
+
+.img_call_action {
+  position: absolute;
+  bottom: 0;
+  right: 50px;
+}
+.card {
+  margin-bottom: 0.5rem;
+}
+.card_button {
+  font-weight: bold;
+}
+.card_button,
+.card-body {
+  width: 100%;
+  border-style: none;
+  background: #fff;
+  text-align: left;
+  background-color: transparent;
+  font-size: 1.6rem !important;
+}
+.card-body {
+  padding: 1.6rem !important;
+}
+.card-body p {
+  font-size: 1.6rem !important;
+}
+.card_button {
+  position: relative;
+}
+.card_button::after {
+  content: "+";
+  font-size: 2rem;
+  margin-right: 40px;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-style: normal;
+  color: var(--color-primary);
+}
+// .collapse:not(.show) {
+//   display: none;
+// }

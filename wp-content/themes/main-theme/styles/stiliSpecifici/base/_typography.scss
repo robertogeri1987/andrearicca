@@ -9,6 +9,11 @@ $h2: 3.6rem;
 $h3: 2.8rem;
 $h4: 1.9rem;
 
+$h1Mobile: 3.6rem;
+$h2Mobile: 3rem;
+$h3Mobile: 2rem;
+$h4Mobile: 1.6rem;
+
 strong,
 b {
   font-weight: 900;
@@ -65,4 +70,21 @@ h4,
 .text-stroke {
   color: white;
   text-shadow: -1px 0 #3c4043, 0 1px #3c4043, 1px 0 #3c4043, 0 -1px #3c4043;
+}
+@media (max-width: 768px) {
+  h1,
+  .text-1 {
+    font-size: $h1Mobile;
+    line-height: 4rem;
+  }
+  h2,
+  .text-2 {
+    font-size: $h2Mobile;
+    line-height: 3.3rem;
+  }
+   h3,
+  .text-3 {
+    font-size: $h3Mobile;
+    line-height: 3rem;
+  }
 }

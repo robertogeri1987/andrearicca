@@ -54,7 +54,7 @@
 					<a itemprop="url" class="navbar-brand" href="<?php echo get_home_url(); ?>">
 						<?php
 						$percorso = get_template_directory_uri();
-						echo '<img itemprop="logo" itemprop="photo" src="' .  $percorso . '/assets/img/logo.svg"' . ' alt="Logo" width="140" heigth="60">';
+						echo '<img itemprop="logo" itemprop="photo" src="' .  $percorso . '/assets/img/assistenza-riparazione-elettrodomestici.jpg"' . ' alt="assistenza e riparazione elettodomestici" width="160" height="40">';
 						?>
 					</a>
 
@@ -91,7 +91,7 @@
 
 									if (!empty($children)) {
 
-										echo '<ul aria-labelledby="dropdownMenu1" class="dropdown-menu shadow">';
+										echo '<ul aria-labelledby="dropdownMenu1" class="dropdown-menu shadow-grey">';
 										foreach ($children as $itemSecondaryNav) {
 
 											if ($itemSecondaryNav->menu_item_parent == $itemPrimaryNav->ID) {

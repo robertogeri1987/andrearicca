@@ -1,5 +1,5 @@
 <section class="">
-    <div class="d-flex">
+    <div class="row">
         <div class="col-md-6 text-white bg-dark py-12 px-5">
             <h2 class="mb-5">Fissa un appuntamento con il tecnico.
                 <span class="color-primary">Facile e rapido</span>
@@ -13,7 +13,7 @@
                 </span>
             </h2>
             <a href="#" class="btn bg-secodary text-uppercase font-bold">Chiama ora</a>
-            <img style="position:absolute; bottom:0; right:50px;" class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/assets/img/assitenza-rapida.png" alt="assitenza rapida" width="300" loading="lazy">
+            <img class="img-fluid img_call_action" src="<?php echo get_template_directory_uri(); ?>/assets/img/assitenza-rapida.png" alt="assitenza rapida" width="300" loading="lazy">
         </div>
     </div>
 </section>

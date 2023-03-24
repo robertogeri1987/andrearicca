@@ -1,10 +1,17 @@
-.btn{
-    background-color: var(--color-primary);
-    color: #fff;
-    padding: 1.2rem 1.8rem;
-    font-size: 2rem;
+.btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 1.2rem 1.8rem;
+  font-size: 2rem;
 }
-.btn-white{
-    background-color: #fff;
-    color: var(--color-primary);
+.btn-white {
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
+.chiama-ora {
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  text-align: center;
 }

@@ -11,16 +11,18 @@
         </div>
         <div class="row py-6">
             <?php
+            $current_page_id = get_the_ID();
             $args = array(
-                'post_type' => 'marchi',
-                'posts_per_page' => -1, //mostra tutti i post
-                'orderby' => 'title',
-                'order' => 'ASC' //imposta l'ordine ascendente (A-Z)
+                'post_type'      => 'page',
+                'posts_per_page' => -1,
+                'post_parent'    => $current_page_id,
+                'order'          => 'ASC',
+                'orderby'        => 'menu_order'
             );
-            $query = new WP_Query($args);
-            if ($query->have_posts()) {
-                while ($query->have_posts()) {
-                    $query->the_post();
+
+            $child_pages = new WP_Query($args);
+            if ($child_pages->have_posts()) :
+                while ($child_pages->have_posts()) : $child_pages->the_post();
             ?>
                     <div class="col-md-3 p-2 marchio mb-2">
                         <div class="shadow-grey d-flex justify-content-center py-6">
@@ -28,7 +30,7 @@
                                 <?php
                                 if (has_post_thumbnail()) {
                                     $image_attributes = wp_get_attachment_image_src(get_post_thumbnail_id(), 'full');
-                                   // echo '<img src="' . $image_attributes[0] . '" alt="' . get_the_title() . '" width="100px" height="100px" class="my-4" style="object-fit:contain;"/>';
+                                    // echo '<img src="' . $image_attributes[0] . '" alt="' . get_the_title() . '" width="100px" height="100px" class="my-4" style="object-fit:contain;"/>';
                                 }
                                 ?>
                                 <?php the_title('<h3 class="text-4 text-center text-dark m-0"> Assistenza <br><span class="color-primary">', '</span></h3>'); ?>
@@ -36,8 +38,8 @@
                         </div>
                     </div>
             <?php
-                }
-            }
+                endwhile;
+            endif;
             wp_reset_postdata();
             ?>
         </div>
