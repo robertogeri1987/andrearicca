@@ -11,6 +11,7 @@
                         <p>Preventivi prima della riparazione, senza sorprese!</p>
                         <p class="text-thin"><strong>Da lunedì al venerdì dalle ore 8 e 30 alle 19 e 30. Il Sabato dalle ore 9 alle ore 13.</strong></p>
                         <a href="#" class="btn bg-secodary">Chatta ora</a>
+                        <a href="#fissaintervento" class="btn ml-4">Fissa un intervento</a>
                     </div>
                 </div>
                 <div class="col-md-6 align-items-center">
@@ -44,6 +45,8 @@
     <?php get_template_part('template/marchi', 'page'); ?>
     <?php get_template_part('template/tipologie', 'page'); ?>
     <?php get_template_part('template/recensioni', 'page'); ?>
-    <?php get_template_part('template/contactform', 'page'); ?>
+    <div id="fissaintervento">
+        <?php get_template_part('template/contactform', 'page'); ?>
+    </div>
 </main>
 <?php get_footer(); ?>

@@ -44,7 +44,7 @@
     <?php get_template_part('template/calltoaction', 'page'); ?>
     <?php get_template_part('template/tipologie', 'page'); ?>
     <?php get_template_part('template/recensioni', 'page'); ?>
-    <div name="#fissaintervento">
+    <div id="fissaintervento">
         <?php get_template_part('template/contactform', 'page'); ?>
     </div>
     <?php if (!empty(get_the_content())){?>

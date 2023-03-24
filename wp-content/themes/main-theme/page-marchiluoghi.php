@@ -42,7 +42,7 @@ get_header(); ?>
     </section>
     <?php get_template_part('template/perchesceglierci', 'page'); ?>
     <?php get_template_part('template/calltoaction', 'page'); ?>
-    <?php get_template_part('template/marchiluoghi', 'page'); ?>
+    <?php get_template_part('template/marchi', 'page'); ?>
     <?php get_template_part('template/tipologie', 'page'); ?>
     <?php get_template_part('template/recensioni', 'page'); ?>
     <?php get_template_part('template/contactform', 'page'); ?>
